@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+// force go generated package to be "main".
+option go_package = "main";
+
+// Person object represents a human.
+message Person {
+    string id = 1; // Unique ID for this person.
+    string name = 2;
+    string surname = 3;
+    uint32 age = 4;
+}
+
+// DemoRPCService offers methods to create and read Persons.
+service DemoRPCService {
+    // Creates a Person
+    rpc CreatePerson (CreatePersonArgs) returns (Person) {}
+
+    // Reads a Person
+    rpc ReadPerson (ReadPersonArgs) returns (Person) {}
+}
+
+// CreatePersonArgs is used as parameter to the CreatePerson method.
+message CreatePersonArgs {
+    string name = 1;
+    string surname = 2;
+    uint32 age = 3;
+}
+
+// ReadPersonArgs is used as parameter to the ReadPerson method.
+message ReadPersonArgs {
+    string id = 1;
+}
