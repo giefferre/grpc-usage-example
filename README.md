@@ -1,5 +1,7 @@
 # gRPC Usage Example
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/giefferre/grpc-usage-example)](https://goreportcard.com/report/github.com/giefferre/grpc-usage-example) [![Updates](https://pyup.io/repos/github/giefferre/grpc-usage-example/shield.svg)](https://pyup.io/repos/github/giefferre/grpc-usage-example/) [![Python 3](https://pyup.io/repos/github/giefferre/grpc-usage-example/python-3-shield.svg)](https://pyup.io/repos/github/giefferre/grpc-usage-example/)
+
 A simple client-server architecture showing how [gRPC](https://grpc.io/) works.
 
 Contains:
